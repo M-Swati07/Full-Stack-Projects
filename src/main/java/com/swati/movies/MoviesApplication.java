@@ -13,6 +13,7 @@ public class MoviesApplication {
 		SpringApplication.run(MoviesApplication.class, args);
 	}
 
+	/* routing */
 	@GetMapping("/")
 	public String getRoute() {
 		return "Helloo";
