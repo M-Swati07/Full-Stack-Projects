@@ -13,8 +13,12 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Review {
+    
     @Id
     private ObjectId id;
-    private String body;
-    
+    private String userReview;
+
+    public Review(String userReview) {
+        this.userReview = userReview;
+    } 
 }
